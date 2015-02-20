@@ -76,4 +76,5 @@ group :test do
   gem 'capybara'
   gem 'email_spec'
   gem 'turnip'
+  gem "codeclimate-test-reporter", require: nil
 end

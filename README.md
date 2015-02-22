@@ -39,9 +39,11 @@ https://github.com/railsblocks/railsblocks-web/issues
 
 [MIT License](LICENSE)
 
-### Components Status
+#### Components Status
 
-#### Railblocks Theme Bootstrap
+Overview of blocks state based on their badges
+
+##### [Railblocks Theme Bootstrap](https://github.com/railsblocks/railsblocks-theme-bootstrap)
 
 [![Build Status](https://travis-ci.org/railsblocks/railsblocks-theme-bootstrap.svg?branch=master)](https://travis-ci.org/railsblocks/railsblocks-theme-bootstrap)
 [![Code Climate](https://codeclimate.com/github/railsblocks/railsblocks-theme-bootstrap/badges/gpa.svg)](https://codeclimate.com/github/railsblocks/railsblocks-theme-bootstrap)

@@ -43,6 +43,8 @@ group :development, :test do
   gem 'spring'
 end
 
+# Rails blocks
+gem 'railsblocks-theme-bootstrap', '0.0.3'
 
 gem 'country_select'
 gem 'devise'

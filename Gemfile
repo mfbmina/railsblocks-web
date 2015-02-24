@@ -45,6 +45,7 @@ end
 
 # Rails blocks
 gem 'railsblocks-theme-bootstrap', '0.0.3'
+gem 'railsblocks-pages', '0.0.1'
 
 gem 'country_select'
 gem 'devise'

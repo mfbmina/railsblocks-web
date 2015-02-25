@@ -1,8 +1,19 @@
 source 'https://rubygems.org'
 
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.0'
+rails_version = ENV["RAILS_VERSION"] || "default"
+
+rails = case rails_version
+when "master"
+  {github: "rails/rails"}
+when "default"
+  "= 4.2.0"
+else
+  "~> #{rails_version}"
+end
+
+gem "rails", rails
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets

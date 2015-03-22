@@ -73,12 +73,20 @@ group :development do
   gem 'guard-bundler', require: false
   gem 'guard-livereload', require: false
   gem 'guard-rspec', require: false
-  gem 'jazz_fingers'
   gem 'letter_opener'
   gem 'listen', '~> 2.7.12'
   gem 'quiet_assets'
   gem 'spring-commands-rspec'
   gem 'thin'
+  # pry stuff
+  gem 'pry'
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'pry-git'
+  gem 'pry-remote'
+  gem 'pry-byebug'
+  gem 'hirb'
+  gem 'awesome_print'
 end
 
 group :development, :test do

@@ -360,7 +360,7 @@ GEM
       rails_stdout_logging
     rails_serve_static_assets (0.0.4)
     rails_stdout_logging (0.0.3)
-    railsblocks-activeadmin (0.0.1)
+    railsblocks-activeadmin (0.0.2)
       activeadmin (~> 1.0.0.pre1)
       activetrail (~> 0.1)
       rails (~> 4.2.0)

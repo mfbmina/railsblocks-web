@@ -55,11 +55,33 @@ group :development, :test do
 end
 
 # Rails blocks
-gem 'railsblocks-theme-bootstrap', '0.0.3'
-gem 'railsblocks-pages', '0.0.1'
+# gem 'activetrail', path: '../../activetrail'
+# gem 'railsblocks-auth', path: '../railsblocks-auth'
+# gem 'railsblocks-activeadmin', path: '../railsblocks-activeadmin'
+# gem 'railsblocks-entities', path: '../railsblocks-entities'
+# gem 'railsblocks-financial', path: '../railsblocks-financial'
+# gem 'railsblocks-pages', path: '../railsblocks-pages'
+# gem 'railsblocks-products', path: '../railsblocks-products'
+# gem 'railsblocks-theme-bootstrap', path: '../railsblocks-products'
+
+# Rails blocks
+gem 'activetrail'
+gem 'railsblocks-auth'
+gem 'railsblocks-activeadmin'
+gem 'railsblocks-entities'
+# gem 'railsblocks-financial'
+gem 'railsblocks-pages'
+# gem 'railsblocks-products'
+gem 'railsblocks-theme-bootstrap'
+
+unless ENV["RAILS_ENV"] == "production"
+  gem 'activeadmin', github: 'activeadmin'
+  gem "trailblazer", github: "fernandes/trailblazer", branch: "master"
+  gem "reform", github: "fernandes/reform", branch: "feature/expose_contract_fields"
+  gem "formtastic", github: "fernandes/formtastic", branch: "feature/get_fields_from_form_object"
+end
 
 gem 'country_select'
-gem 'devise'
 gem 'haml-rails'
 gem 'json'
 gem 'responders'

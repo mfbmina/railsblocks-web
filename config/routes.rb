@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
-  mount Railsblocks::Theme::Bootstrap::Engine, at: "/theme"
+  ActiveAdmin.routes(self)
+
+  mount Railsblocks::Auth::Engine, at: "/"
+  mount Railsblocks::Entities::Engine, at: "/"
+  # mount Railsblocks::Financial::Engine, at: "/"
+  # mount Railsblocks::Products::Engine, at: "/"
   mount Railsblocks::Pages::Engine, at: "/"
+  mount Railsblocks::Theme::Bootstrap::Engine, at: "/theme"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

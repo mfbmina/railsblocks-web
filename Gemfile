@@ -7,15 +7,13 @@ rails = case rails_version
 when "master"
   {github: "rails/rails"}
 when "default"
-  "= 4.2.0"
+  "= 4.2.1"
 else
   "~> #{rails_version}"
 end
 
 gem "rails", rails
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -74,12 +72,10 @@ gem 'railsblocks-pages'
 # gem 'railsblocks-products'
 gem 'railsblocks-theme-bootstrap'
 
-unless ENV["RAILS_ENV"] == "production"
-  gem 'activeadmin', github: 'activeadmin'
-  gem "trailblazer", github: "fernandes/trailblazer", branch: "master"
-  gem "reform", github: "fernandes/reform", branch: "feature/expose_contract_fields"
-  gem "formtastic", github: "fernandes/formtastic", branch: "feature/get_fields_from_form_object"
-end
+gem 'activeadmin', github: 'activeadmin'
+gem "trailblazer", github: "fernandes/trailblazer", branch: "master"
+gem "reform", github: "fernandes/reform", branch: "feature/expose_contract_fields"
+gem "formtastic", github: "fernandes/formtastic", branch: "feature/get_fields_from_form_object"
 
 gem 'country_select'
 gem 'haml-rails'
@@ -99,6 +95,8 @@ group :development do
   gem 'listen', '~> 2.7.12'
   gem 'quiet_assets'
   gem 'spring-commands-rspec'
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
   gem 'thin'
   # pry stuff
   gem 'pry'
@@ -121,4 +119,10 @@ group :test do
   gem 'email_spec'
   gem 'turnip'
   gem "codeclimate-test-reporter", require: nil
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+  gem 'puma'
 end

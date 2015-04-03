@@ -1,0 +1,13 @@
+.container.col-xs-8.col-xs-offset-2
+  - if notice
+    .alert.alert-dismissible.alert-success
+      %button.close{"data-dismiss" => "alert", :type => "button"} ×
+      %h4 Notice!
+      %p
+        = alert
+  - if alert
+    .alert.alert-dismissible.alert-danger
+      %button.close{"data-dismiss" => "alert", :type => "button"} ×
+      %h4 Alert!
+      %p
+        = alert

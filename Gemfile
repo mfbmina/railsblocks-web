@@ -60,7 +60,7 @@ end
 # gem 'railsblocks-financial', path: '../railsblocks-financial'
 # gem 'railsblocks-pages', path: '../railsblocks-pages'
 # gem 'railsblocks-products', path: '../railsblocks-products'
-# gem 'railsblocks-theme-bootstrap', path: '../railsblocks-products'
+# gem 'railsblocks-theme-bootstrap', path: '../railsblocks-theme-bootstrap'
 
 # Rails blocks
 gem 'activetrail'

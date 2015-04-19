@@ -37,7 +37,7 @@ GIT
 
 GIT
   remote: git://github.com/fernandes/trailblazer.git
-  revision: 5306464aca6127ac560359aa42188208a651f580
+  revision: cfeaa953d76b106df289c895ec5442f6956dd95e
   branch: master
   specs:
     trailblazer (0.2.2)
